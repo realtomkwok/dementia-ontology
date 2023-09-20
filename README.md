@@ -5,7 +5,7 @@ This repository is built to store each version of our onotlogy file so that we c
 ## How to use this repo
 * Find your branch
 * Upload your revised files to your branch
-* Ask for a group review before merging them to the main branch
+* Pull a request, ask for a group review before merging them to the main branch
 
 ## Resources
 * **Google Drive folder**: https://drive.google.com/drive/folders/1sR9MHC0HnyRxm5rsKPTD66rTcr9iP1AX?usp=sharing
