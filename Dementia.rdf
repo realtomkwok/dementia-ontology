@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/"
+     xml:base="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/consistOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/consistOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/dianoses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/dianoses">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasCause">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isCausedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasEffectOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasEffectOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isAffectedBy"/>
+        <rdfs:comment xml:lang="en">= affects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSignOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSignOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isAffectedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isCausedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isCausedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isDiagnosedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isDiagnosedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSignOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSignOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Difficulty with problem-solving or understanding abstract concepts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+        <rdfs:comment>The risk of developing dementia increases with age, particularly after the age of 65.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlcoholRelatedDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlcoholRelatedDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alcoholism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alcoholism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alcoholism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:comment>Alternative treatments for dementia include herbal remedies, medical foods, dietary supplements, acupuncture, ginkgo biloba, Yizhi treatment, ChatoSan, silymarin, Radix Ginseng, Danshen root, mulberry fruit, green tea, black coffee, oral calcium, coenzyme Q10, tramiprostate, phosphatidylserine, Huperzine A, sunshine, coconut oil, and curcumin.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingExcessiveAlcohol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingExcessiveAlcohol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingHeadInjuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingHeadInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Taking precautions to avoid head injuries, such as wearing seat belts, using helmets during sports activities, and preventing falls, can help prevent dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingSmoking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AvoidingSmoking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BalancedDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BalancedDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BloodTests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BloodTests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LaboratoryTests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainImaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainImaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainInjuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainTumor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainImaging"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MRI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CardiovascularHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CardiovascularHealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CertainFormsof_FrontotemporalDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CertainFormsof_FrontotemporalDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CommunityCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CommunityCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+        <rdfs:comment>Community care for dementia patients involves support from home care nurses, who provide medical care and nursing care. It also includes community-based services, social support, and interventions to support caregivers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CreutzfeldJakob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#CreutzfeldJakob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention">
+        <rdfs:comment>These preventive measures can reduce the risk of dementia, but, they do not guarantee complete prevention. It&apos;s always advisable to consult with healthcare professionals for personalized advice and guidance.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Depression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Depression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DifficultyPerformingTasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DifficultyPerformingTasks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Struggling with everyday tasks, such as cooking or getting dressed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Disorientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Disorientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Feeling confused about time, place, or people.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DownSyndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DownSyndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Folate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Folate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#nutritionalDeficiency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Frontotemporal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Frontotemporal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders"/>
+        <rdfs:seeAlso rdf:resource="https://www.sydney.edu.au/brain-mind/our-clinics/frontotemporal-dementia-clinic.html"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+        <rdfs:comment>Certain genetic factors can increase the risk of developing dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GettingQualitySleep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GettingQualitySleep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Prioritizing good sleep hygiene and getting enough quality sleep and aiming for 7-8 hours of uninterrupted sleep each night can help reduce the risk of dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HeadInjurie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HeadInjurie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+        <rdfs:comment>Repeated head injuries or severe head trauma can increase the risk of developing dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HealthyLifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HealthyLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Heart-HealthyDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Heart-HealthyDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>These diets emphasize fruits, vegetables, whole grains, lean proteins, and healthy fats.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HomeCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HomeCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+        <rdfs:comment>Home care for dementia patients involves support from family caregivers and the provision of personal control, decision-making, and environmental texture. It follows the principles of comfort, attachments, inclusion, occupation, and identity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#InstitutionalCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#InstitutionalCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+        <rdfs:comment>Institutional care for dementia patients requires a multi-disciplinary team and provides medical care and nursing care.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LaboratoryTests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LaboratoryTests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Trouble finding the right words or understanding others.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageSkills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageSkills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NeuropsychologicalTesting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LewyBodies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LewyBodies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#GeneticDisorders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LifestyleFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LifestyleFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+        <rdfs:comment>Unhealthy lifestyle choices, such as smoking, excessive alcohol consumption, a sedentary lifestyle and so on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LymeDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LymeDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MRI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MRI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainImaging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MaintainingHealthyWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MaintainingHealthyWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Maintaining a healthy weight through regular exercise and a balanced diet can help reduce the risk of dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ManagingChronicConditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ManagingChronicConditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise"/>
+        <rdfs:comment>Effectively managing chronic conditions like diabetes, high blood pressure, and high cholesterol and regular check-ups and adherence to prescribed medicationscan reduce the risk of dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ManagingStress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ManagingStress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Finding healthy ways to manage stress, such as practicing relaxation techniques, engaging in hobbies, and seeking support from loved ones, can help reduce the risk of dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+        <rdfs:comment>Certain medical conditions can increase the risk of developing dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalConditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalConditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:comment>Dementia treatment includes medication such as cholinesterase inhibitors (donepezil, rivastigmine, galantamine), memantamine, and vitamin E. Benzodiazepines may also be used.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Medications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Medications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Memory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Memory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NeuropsychologicalTesting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MemoryLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MemoryLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Difficulty in remembering recent events or important information.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MentalHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MentalHealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricAssessment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MentalStimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MentalStimulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Such as puzzles, reading, learning new skills, and socializing, can help keep the brain active and reduce the risk of dementia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MisplacingThings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MisplacingThings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Putting items in unusual places and being unable to find them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChanges -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChanges">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Experiencing changes in mood, personality, or behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MultipleSclerosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MultipleSclerosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MusicTherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MusicTherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:comment>Music therapy can also be used to reduce depression and agitation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NeuropsychologicalTesting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NeuropsychologicalTesting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Neurosyphilis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Neurosyphilis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NursingHomeCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NursingHomeCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+        <rdfs:comment>Nursing home care provides nursing care for dementia patients. It includes medical care, nursing care, and support for functional activities, safety environment, and social engagement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PalliativeCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PalliativeCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCare"/>
+        <rdfs:comment>Palliative care for dementia patients focuses on providing relief from symptoms and improving quality of life. It includes medical care, nursing care, behavioral management, pain control, symptom relief, counseling, and support from a multi-disciplinary team.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PhysicalExamination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PhysicalExamination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PoorJudgment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PoorJudgment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Making decisions that are not appropriate or safe.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ProblemSolving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ProblemSolving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#NeuropsychologicalTesting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricConditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricConditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#PsychiatricAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularExercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HealthyLifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularHealthCheckup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#RegularHealthCheckup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Regular health check-ups, including cognitive assessments, can help detect any early signs of cognitive decline and allow for timely intervention and treatment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Trouble with spatial awareness or getting lost in familiar places.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#StayingSociallyActive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#StayingSociallyActive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+        <rdfs:comment>Maintaining social connections and participating in social activities can help reduce the risk of dementia. This includes spending time with family and friends, joining clubs or community groups, and volunteering.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Strokes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Strokes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Vascular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ThyroidDisorders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ThyroidDisorders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#hormoneDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Vascular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Vascular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+        <rdfs:comment>There are a number of different types of vascular dementia, the two most common being Multi-infarct dementia and Binswanger’s disease.</rdfs:comment>
+        <rdfs:comment>Vascular dementia usually is caused by  a stroke or series of strokes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#VascularDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#VascularDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Vascular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ViralMeningitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ViralMeningitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#VitaminB12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#VitaminB12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#nutritionalDeficiency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#hormoneDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#hormoneDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#nutritionalDeficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#nutritionalDeficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alzheimer&apos;s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alzheimer&apos;s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+        <rdfs:comment>Gene – gene interactions, gene – lifestyle interactions and gene – environment interactions that may contribute to the cause of Alzheimer’s disease.</rdfs:comment>
+        <rdfs:comment>The second common sign of Alzheimer&apos;s disease is neurofibrillary tangles.</rdfs:comment>
+        <rdfs:comment>The two most common hallmarks of Alzheimer&apos;s disease in the brain are beta-amyloid plaques and neurofibrillary tangles.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.alzgene.org/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HIV/AIDS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#HIV/AIDS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Huntington’s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Huntington’s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative: -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative:">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Lack of motivation or interest in activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Parkinson’s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Parkinson’s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Patient&apos;Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Patient&apos;Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaEarlyStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaEarlyStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaLateStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaLateStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaMiddleStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaMiddleStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageSkills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Memory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#ProblemSolving"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaEarlyStage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaLateStage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaMiddleStage"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
