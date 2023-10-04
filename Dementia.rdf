@@ -21,19 +21,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/canBeAssessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/canBeAssessedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ClinicalDementiaRatingScale"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FunctionalAssessmentStaging"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/GlobalDeteriorationScale"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/consistOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/consistOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/NeurologicalDisorder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToBehave"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToThink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ParkinsonsDementia"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/dianoses -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/diagnoses -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/dianoses">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/diagnoses">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isDiagnosedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasAbnormalitiesOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasAbnormalitiesOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MixedDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LewyBodiesDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VascularDementia"/>
     </owl:ObjectProperty>
     
 
@@ -52,6 +83,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasEffectOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isAffectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
         <rdfs:comment xml:lang="en">= affects</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -60,6 +93,31 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSignOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSignOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ParkinsonsDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DopamineLoss"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MotorProblems"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Tremor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/increasesRiskFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/increasesRiskFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DownSyndrome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MultipleSclerosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaEarlyStage"/>
+    </owl:ObjectProperty>
     
 
 
@@ -75,6 +133,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isCausedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Strokes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VascularDementia"/>
     </owl:ObjectProperty>
     
 
@@ -83,6 +143,17 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isDiagnosedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isMisdiagnosedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isMisdiagnosedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ParkinsonsDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LewyBodiesDementia"/>
     </owl:ObjectProperty>
     
 
@@ -101,6 +172,49 @@
     
 
 
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainTumor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/SurgicalIntervention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MusicTherapy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Aromatherapy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Massage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Snoezelen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CamIntervention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/occursAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/occursAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChange"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaEarlyStage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -112,9 +226,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblems -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblems">
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AbstractThinkingProblem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
         <rdfs:comment>Difficulty with problem-solving or understanding abstract concepts.</rdfs:comment>
     </owl:Class>
@@ -196,9 +310,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases">
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
     </owl:Class>
     
@@ -223,7 +337,7 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainTumor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainTumor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
     </owl:Class>
     
 
@@ -278,13 +392,14 @@
 
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
-    
-
-
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasCause"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -304,7 +419,14 @@
 
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -430,6 +552,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Infection">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasCause"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -451,9 +579,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblems -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblems">
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
         <rdfs:comment>Trouble finding the right words or understanding others.</rdfs:comment>
     </owl:Class>
@@ -481,6 +609,15 @@
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LifestyleFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
         <rdfs:comment>Unhealthy lifestyle choices, such as smoking, excessive alcohol consumption, a sedentary lifestyle and so on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:comment>Lack of motivation or interest in activities.</rdfs:comment>
     </owl:Class>
     
 
@@ -530,9 +667,7 @@
 
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
     
 
 
@@ -566,14 +701,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalTreatment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
         <rdfs:comment>Dementia treatment includes medication such as cholinesterase inhibitors (donepezil, rivastigmine, galantamine), memantamine, and vitamin E. Benzodiazepines may also be used.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Medications -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Medications">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory"/>
     </owl:Class>
     
 
@@ -622,10 +749,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChanges -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChange -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChanges">
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChange">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CommunicationImpairment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MovementChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Experiencing changes in mood, personality, or behavior.</rdfs:comment>
     </owl:Class>
     
@@ -634,7 +773,7 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MultipleSclerosis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MultipleSclerosis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
     </owl:Class>
     
 
@@ -748,9 +887,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblems -->
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblems">
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#SpatialSkillsProblem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
         <rdfs:comment>Trouble with spatial awareness or getting lost in familiar places.</rdfs:comment>
     </owl:Class>
@@ -835,7 +974,7 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alzheimer&apos;s -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Alzheimer&apos;s">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
         <rdfs:comment>Gene – gene interactions, gene – lifestyle interactions and gene – environment interactions that may contribute to the cause of Alzheimer’s disease.</rdfs:comment>
         <rdfs:comment>The second common sign of Alzheimer&apos;s disease is neurofibrillary tangles.</rdfs:comment>
         <rdfs:comment>The two most common hallmarks of Alzheimer&apos;s disease in the brain are beta-amyloid plaques and neurofibrillary tangles.</rdfs:comment>
@@ -855,16 +994,7 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Huntington’s -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Huntington’s">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative: -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LossofInitiative:">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
-        <rdfs:comment>Lack of motivation or interest in activities.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
     </owl:Class>
     
 
@@ -872,7 +1002,7 @@
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Parkinson’s -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Parkinson’s">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDiseases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
     </owl:Class>
     
 
@@ -881,6 +1011,168 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Patient&apos;Symptoms">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalHistory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToBehave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToBehave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToThink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AbilityToThink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Acupuncture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Acupuncture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AgitationBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AgitationBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#Disorientation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MemoryLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CommunicationImpairment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Depression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isTreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Marijuana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Apathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Apathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Aromatherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Aromatherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/BPSD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/BPSD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/BensonsSyndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/BensonsSyndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Benzodiazepine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Benzodiazepine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CamIntervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CamIntervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AgitationBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CholinesteraseInhibitors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CholinesteraseInhibitors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ClinicalDementiaRatingScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ClinicalDementiaRatingScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CognitiveFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CommunicationImpairment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CommunicationImpairment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
     </owl:Class>
     
 
@@ -911,7 +1203,364 @@
 
     <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/EarlyStage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LateStage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MiddleStage"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Depression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Depression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AlzheimersDementia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DietarySupplements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DietarySupplements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Donepezil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Donepezil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DopamineLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DopamineLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FocusLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FocusLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FrontotemporalDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FrontotemporalDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasEffectOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MoodPersonalityBehaviorChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/CommunicationImpairment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MovementChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FunctionalAssessmentStaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FunctionalAssessmentStaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/GlobalDeteriorationScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/GlobalDeteriorationScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MedicalAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/HerbalRemedies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/HerbalRemedies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LewyBodiesDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LewyBodiesDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Marijuana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Marijuana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Massage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Massage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Stress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MedicalFoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MedicalFoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Memantamine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Memantamine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MixedDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MixedDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MotorProblems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MotorProblems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MovementChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MovementChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Nemenda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Nemenda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/NeurologicalDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/NeurologicalDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaCause"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/consistOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#BrainDisease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ParkinsonsDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/ParkinsonsDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Snoezelen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Snoezelen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/AgitationBehaviour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Apathy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/SurgicalIntervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/SurgicalIntervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/TherapeuticMusic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/TherapeuticMusic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MusicTherapy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/reduces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/BPSD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Tremor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Tremor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VascularDementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VascularDementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DifficultyPerformingTasks"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#LanguageProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#MemoryLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/isSymptomOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/FocusLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VitaminE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/YizhiTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/YizhiTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#AlternativeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/EarlyStage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/EarlyStage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LateStage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/LateStage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/DementiaStage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MiddleStage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia/MiddleStage"/>
     
 
 
@@ -923,16 +1572,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaDiagnosis"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaPrevention"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaRiskFactor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaSymptom"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/allen/ontologies/2023/8/dementia#DementiaTreatment"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -953,5 +1592,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
